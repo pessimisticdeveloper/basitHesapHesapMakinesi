@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCFBFD"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:background="#070010"
+        android:id="@+id/number1"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Sayı Giriniz :"
+        android:textColorHint="#F7F6F8"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="#E10728"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:background="#0A0117"
+        android:id="@+id/number2"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Sayı Giriniz :"
+        android:textColorHint="#F2F1F4"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="#E10728"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number1" />
+
+    <TextView
+        android:id="@+id/textViewSonuc"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:textAlignment="center"
+        android:textColor="#E10728"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number2"
+        tools:text="7020" />
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSonuc">
+
+        <Button
+            android:background="#090909"
+            android:id="@+id/btnCarp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textColor="#E10728"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_marginStart="10dp"
+            android:background="#090909"
+            android:id="@+id/btnTopla"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textColor="#E10728"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_marginStart="10dp"
+            android:background="#090909"
+            android:id="@+id/btnBol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:textColor="#E10728"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_marginStart="10dp"
+            android:background="#090909"
+            android:id="@+id/btnCıkar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textColor="#E10728"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="182dp"
+        android:text="( Production place pessimisticdeveloper. )"
+        android:textAlignment="center"
+        android:textColor="#E10728"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+    </TextView>
+</androidx.constraintlayout.widget.ConstraintLayout>
